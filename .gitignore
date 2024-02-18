@@ -1,0 +1,31 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# # Build files
+# /dist/
+# /build/
+
+# # IDE/Editor specific files
+# .vscode/
+# .idea/
+# *.sublime-project
+# *.sublime-workspace
+
+# # Compiled output
+# *.css
+# *.js
+
+# # Dependency directories
+# /.pnp/
+# .pnp.js
+
+# # Logs and databases
+# *.log
+# *.sqlite
+# *.db
+
+# # OS generated files
+# .DS_Store
+# Thumbs.db
