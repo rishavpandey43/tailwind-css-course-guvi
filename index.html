@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Personal Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div
+        class="rounded-bl-[150px] bg-gradient-to-r from-purple-500 via-pink-400 to-pink-600 p-[1px]"
+      >
+        <header class="container mx-auto my-12 text-white">
+          <nav class="relative">
+            <div class="flex items-center justify-between">
+              <a
+                href="#"
+                class="text-lg font-bold sm:text-xl lg:text-2xl xl:text-3xl"
+                >Rishav Pandey</a
+              >
+              <div
+                class="hidden items-center gap-4 text-lg md:flex lg:gap-16 lg:text-xl"
+              >
+                <!-- Navigation items for larger screens -->
+                <a href="#about-me" class="hover:text-gray-300">About</a>
+                <a href="#projects" class="hover:text-gray-300">Projects</a>
+                <a href="#contact-me" class="hover:text-gray-300">Contact Me</a>
+                <a
+                  href="#"
+                  class="rounded-full bg-white px-4 py-2 text-sm text-pink-500 shadow-lg shadow-pink-800 hover:shadow-none lg:text-base"
+                  >Download Resume</a
+                >
+              </div>
+              <!-- Mobile menu toggle button -->
+              <div class="md:hidden">
+                <button onclick="toggleMenu()" class="focus:outline-none">
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- Mobile navigation menu -->
+            <div
+              id="mobileMenu"
+              class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 md:hidden"
+            >
+              <a
+                href="#about-me"
+                onclick="toggleMenu()"
+                class="block px-4 py-2 hover:text-gray-300"
+                >About</a
+              >
+              <a
+                href="#projects"
+                onclick="toggleMenu()"
+                class="block px-4 py-2 hover:text-gray-300"
+                >Projects</a
+              >
+              <a
+                href="#contact-me"
+                onclick="toggleMenu()"
+                class="block px-4 py-2 hover:text-gray-300"
+                >Contact Me</a
+              >
+            </div>
+          </nav>
+        </header>
+        <section id="home" class="my-24 text-center">
+          <div class="container mx-auto">
+            <h1 class="mb-4 text-xl text-white md:text-3xl lg:text-5xl">
+              A Seasoned Frontend Engineer
+            </h1>
+            <p
+              class="mx-auto w-2/3 text-sm text-gray-100 md:text-base lg:text-xl lg:font-medium"
+            >
+              Welcome to my personal portfolio. I'm a passionate developer with
+              a focus on creating engaging user experiences.
+            </p>
+            <div
+              class="mx-auto my-10 flex max-w-80 flex-wrap justify-around gap-8"
+            >
+              <button
+                class="rounded-full bg-white px-4 py-2 font-medium text-pink-500 shadow-lg shadow-pink-800 hover:shadow-none"
+              >
+                Hire Me
+              </button>
+              <button
+                class="rounded-full bg-white px-4 py-2 font-medium text-pink-500 shadow-lg shadow-pink-800 hover:shadow-none"
+              >
+                Resume
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- What I Do Section -->
+      <section class="text-gray-800">
+        <div class="container mx-auto px-5 py-24">
+          <div class="mb-20 text-center">
+            <h1
+              class="mb-4 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-2xl font-medium text-transparent md:text-3xl lg:text-4xl"
+            >
+              What I Do
+            </h1>
+            <p
+              class="mx-auto bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-base text-transparent md:text-xl lg:w-3/4 xl:w-2/4"
+            >
+              I specialize in crafting sleek, intuitive web applications and
+              digital experiences. Here are a few technologies I've been working
+              with:
+            </p>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">
+                  Web Development
+                </h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-3/5 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">JavaScript</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-4/5 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">React</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-2/5 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">CSS & HTML</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-2/4 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">TypeScript</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-1/4 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">
+                  Tailwind CSS
+                </h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-2/5 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">NextJS</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-4/6 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">Redux</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-2/5 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">Apollo</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-1/3 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">Gatsby</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-1/4 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">GraphQL</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-3/4 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out group-hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full p-4 sm:w-1/2 md:w-1/4">
+              <div class="rounded-lg bg-gray-100 p-6 shadow-md">
+                <h2 class="title-font mb-4 text-lg font-medium">NodeJS</h2>
+                <div class="h-2.5 w-full rounded-full bg-gray-200">
+                  <div
+                    class="h-2.5 w-1/5 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-500 ease-in-out hover:w-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about-me"
+        class="rounded-bl-[150px] rounded-tr-[150px] bg-white bg-gradient-to-r from-purple-500 to-pink-600 text-white"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center justify-center py-24"
+        >
+          <img
+            class="mb-10 w-1/3 rounded-full object-cover object-center md:w-1/2 lg:w-1/4"
+            alt="about me"
+            src="assets/profile-picture.webp"
+          />
+          <div class="w-full text-center lg:w-2/3">
+            <h2 class="mb-4 text-2xl font-medium md:text-3xl lg:text-4xl">
+              About Me
+            </h2>
+            <p class="mb-4 text-base md:text-xl">
+              Welcome to the crossroads where coding meets creativity. I am
+              Rishav, a seasoned computer engineer dedicated to the art and
+              science of web development. My journey is marked by a relentless
+              pursuit of innovation, a profound understanding of technology, and
+              a heartfelt dedication to user experience.
+            </p>
+            <p class="mb-8 text-base md:text-xl">
+              My professional path is paved with groundbreaking projects that
+              stretch the limits of what's possible on the web. From sleek,
+              responsive websites that flow like water across devices, to
+              complex applications that process data with the speed and
+              precision of thought, my portfolio is a testament to the power of
+              human-centric design and clean, efficient code.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container mx-auto px-5 py-24">
+          <div class="mb-20 text-center">
+            <h1
+              class="mb-4 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-2xl font-medium text-transparent md:text-3xl lg:text-4xl"
+            >
+              My Projects
+            </h1>
+            <p
+              class="mx-auto bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-base text-transparent md:text-xl lg:w-3/4 xl:w-2/4"
+            >
+              Here are a few projects I've been working on. You can check them
+              out on GitHub.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
+            <!-- Smart Home Automation System -->
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-1.webp"
+                  alt="Smart Home Automation System"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  Smart Home Automation System
+                </h3>
+                <p>
+                  Developed a comprehensive smart home automation system
+                  allowing users to control devices through a web interface.
+                  Integrated IoT for real-time monitoring.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview
+              </a>
+            </div>
+
+            <!-- E-Commerce Platform for Local Artisans -->
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-2.webp"
+                  alt="E-Commerce Platform for Local Artisans"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  E-Commerce Platform for Local Artisans
+                </h3>
+                <p>
+                  Built an e-commerce platform to showcase and sell products by
+                  local artisans, featuring a custom CMS and payment
+                  integration.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+
+            <!-- Personal Finance Tracker -->
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-3.webp"
+                  alt="Personal Finance Tracker"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  Personal Finance Tracker
+                </h3>
+                <p>
+                  Created a personal finance app to help users track expenses,
+                  set budgets, and visualize financial health over time.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+
+            <!-- Health Monitoring Wearable App -->
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-4.webp"
+                  alt="Health Monitoring Wearable App"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  Health Monitoring Wearable App
+                </h3>
+                <p>
+                  Developed an app for wearable technology to monitor vital
+                  signs and physical activity, with features for fitness goals
+                  and health tips.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+
+            <!-- Virtual Event Management Platform -->
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-5.webp"
+                  alt="Virtual Event Management Platform"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  Virtual Event Management Platform
+                </h3>
+                <p>
+                  Engineered a virtual event platform for online conferences and
+                  webinars, with live streaming and interactive participant
+                  features.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-6.webp"
+                  alt="Virtual Event Management Platform"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  AI-Based Chatbot for Customer Service
+                </h3>
+                <p>
+                  Implemented an AI-powered chatbot designed to improve customer
+                  service for online businesses. The chatbot handles inquiries,
+                  provides product recommendations, and supports ticketing
+                  systems with natural language processing.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-7.webp"
+                  alt="Virtual Event Management Platform"
+                />
+                <h3 class="text-xl font-semibold sm:text-2xl">
+                  Recipe Sharing and Meal Application
+                </h3>
+                <p>
+                  Launched a community-driven web application where users can
+                  share recipes, plan meals, and create shopping lists. Features
+                  ingredient-based search functionality and nutritional
+                  insights.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-between gap-y-4 rounded-lg bg-gray-100 p-6 shadow-md"
+            >
+              <div class="space-y-4 text-center">
+                <img
+                  class="mx-auto w-24 rounded-full object-cover sm:w-32 md:w-40 lg:w-48"
+                  src="./assets/project-8.webp"
+                  alt="Virtual Event Management Platform"
+                />
+                <h3 class="text-xl font-semibold md:text-2xl">
+                  Real Estate Property Listing Website
+                </h3>
+                <p>
+                  Developed a real estate website offering comprehensive
+                  property listings, virtual tours, and a powerful search
+                  engine. Implemented user authentication for saving favorites
+                  and scheduling viewings.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-800"
+                >Live Preview</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="rounded-bl-[150px] rounded-tr-[150px] bg-white bg-gradient-to-r from-purple-500 to-pink-600 text-white"
+      >
+        <div class="container mx-auto py-24">
+          <div
+            class="mx-auto flex max-w-[800px] flex-wrap justify-center gap-10 sm:justify-between"
+          >
+            <div class="flex flex-col items-center justify-center gap-4">
+              <img class="w-12" src="./assets/mooc.svg" alt="Online courses" />
+              <h3 class="text-xl font-semibold sm:text-2xl">40+</h3>
+              <p class="text-base sm:text-xl">MOOC's</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+              <img class="w-12" src="./assets/project.svg" alt="Projects" />
+              <h3 class="text-xl font-semibold sm:text-2xl">10+</h3>
+              <p class="text-base sm:text-xl">Live Projects</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+              <img
+                class="w-12"
+                src="./assets/award.svg"
+                alt="Awards and Honours"
+              />
+              <h3 class="text-xl font-semibold sm:text-2xl">40+</h3>
+              <p class="text-base sm:text-xl">Awards and Honours</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-me">
+        <div class="container mx-auto py-24">
+          <h2
+            class="mb-4 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-center text-2xl font-medium text-transparent md:text-3xl lg:text-4xl"
+          >
+            Connect With Me
+          </h2>
+          <p
+            class="mx-auto bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-center text-base text-transparent md:text-xl lg:w-3/4 xl:w-2/4"
+          >
+            Interested in collaborating or have an opportunity to discuss? Fill
+            out the form below to get in touch!
+          </p>
+          <form onsubmit="sendMessage(event)" class="mx-auto max-w-xl">
+            <div class="mt-20 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div class="sm:col-span-3">
+                <label for="first-name" class="block text-lg leading-6"
+                  >First name</label
+                >
+                <div class="mt-2">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    placeholder="Enter your first name"
+                    required
+                    minlength="2"
+                    class="block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div class="sm:col-span-3">
+                <label for="last-name" class="block text-lg leading-6"
+                  >Last name</label
+                >
+                <div class="mt-2">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder="Enter your last name"
+                    required
+                    minlength="2"
+                    class="block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div class="sm:col-span-4">
+                <label for="email" class="block text-lg leading-6"
+                  >Email address</label
+                >
+                <div class="mt-2">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                    class="block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div class="sm:col-span-3">
+                <label for="purpose-to-visit" class="block text-lg leading-6"
+                  >Purpose to connect</label
+                >
+                <div class="mt-2">
+                  <select
+                    id="purpose-to-visit"
+                    name="purpose-to-visit"
+                    required
+                    class="block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm sm:leading-6"
+                  >
+                    <option value="Hiring Inquiry">Hire Me</option>
+                    <option value="Collaboration Inquiry">Collaborate</option>
+                    <option value="Coffee Invitation">Buy me a coffee</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="sm:col-span-full">
+                <label for="your-message" class="block text-lg leading-6"
+                  >What's on Your Mind?</label
+                >
+                <div class="mt-2">
+                  <textarea
+                    id="your-message"
+                    name="your-message"
+                    rows="5"
+                    placeholder="Enter your message here in minimum 40 characters."
+                    required
+                    minlength="40"
+                    class="block w-full rounded-md p-2 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-700 focus:invalid:border-red-500 focus:invalid:ring-red-500 sm:text-sm sm:leading-6"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="sm:col-span-full">
+                <button
+                  type="submit"
+                  class="rounded-xl bg-white bg-gradient-to-r from-purple-500 to-pink-600 px-6 py-2 text-base text-white shadow-lg hover:shadow-none sm:text-xl sm:leading-6"
+                >
+                  Let's connect!
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer
+        class="rounded-tr-[150px] bg-gradient-to-r from-purple-500 via-pink-400 to-pink-600 py-6 text-white"
+      >
+        <div class="container mx-auto">
+          <div class="w-full p-5">
+            <h3 class="mb-4 text-xl font-semibold md:text-2xl">Follow Me</h3>
+            <div class="flex flex-col justify-start space-y-4">
+              <a href="#">
+                <!-- Insert SVG or Font Awesome Icon for GitHub -->
+                GitHub
+              </a>
+              <a href="#">
+                <!-- LinkedIn -->
+                LinkedIn
+              </a>
+              <a href="#">
+                <!-- Twitter -->
+                Twitter
+              </a>
+            </div>
+          </div>
+          <div
+            class="border-t border-gray-50 pt-5 text-center text-base md:text-xl"
+          >
+            © 2024 Rishav Pandey. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      function sendMessage(event) {
+        event.preventDefault()
+
+        // Get the form values
+        const firstName = document.getElementById('first-name').value.trim()
+        const lastName = document.getElementById('last-name').value.trim()
+        const email = document.getElementById('email').value.trim()
+        const purpose = document.getElementById('purpose-to-visit').value.trim()
+        const message = document.getElementById('your-message').value.trim()
+
+        // Create a WhatsApp message with line breaks
+        const whatsappMessage = `Hello,\n\nMy name is ${firstName} ${lastName}.\n\nI would like to connect regarding: ${purpose}.\n\nContact Email: ${email}\n\nMessage: ${message}`
+
+        // Encode the message for a URL
+        const encodedMessage = encodeURIComponent(whatsappMessage)
+
+        // Redirect to WhatsApp
+        window.open(`https://wa.me/919771578320?text=${encodedMessage}`)
+      }
+
+      function toggleMenu() {
+        const menu = document.getElementById('mobileMenu')
+        if (menu.classList.contains('max-h-0')) {
+          menu.classList.remove('max-h-0', 'opacity-0')
+          menu.classList.add('max-h-96', 'opacity-100') // Adjust 'max-h-96' as needed to fit content
+        } else {
+          menu.classList.remove('max-h-96', 'opacity-100')
+          menu.classList.add('max-h-0', 'opacity-0')
+        }
+      }
+    </script>
+  </body>
+</html>
